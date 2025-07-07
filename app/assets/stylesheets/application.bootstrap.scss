@@ -1,0 +1,69 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+
+
+.text-garnet {
+  color: #7B1E3A; // grenat
+}
+
+.btn-outline-garnet {
+  color: #7B1E3A;
+  border-color: #7B1E3A;
+}
+
+.btn-outline-garnet:hover {
+  background-color: #7B1E3A;
+  color: white;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffafc;
+  color: #333;
+  background: linear-gradient(135deg, #fff6f9, #ffffff);
+  overflow-x: hidden;
+}
+
+.card {
+  border-radius: 2rem;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 4px 10px rgba(123, 30, 58, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.blobs {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: radial-gradient(circle at 20% 20%, #ffc0cb33 0%, transparent 70%),
+              radial-gradient(circle at 80% 30%, #ffb6c133 0%, transparent 70%),
+              radial-gradient(circle at 50% 80%, #f9c5d133 0%, transparent 70%);
+  animation: float 15s infinite alternate ease-in-out;
+}
+
+@keyframes float {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(20px, -30px); }
+}
+
+
+.home-page {
+  background: linear-gradient(to bottom right, #fff6f9, #ffffff);
+}
+
+.projects-page {
+  background: linear-gradient(to bottom, #fef6fb, #fdfdfd);
+}
+
+.contact-page {
+  background: radial-gradient(circle at top right, #fff0f4, #ffffff);
+}
